@@ -13,7 +13,6 @@ source_code = requests.get(url)
 plain_text = source_code.text
 #print(plain_text)
 soup = BeautifulSoup(plain_text,"html.parser")
-flag=0
 for link in soup.find_all('div',{'class':'card-title'}):
     #print(link.text)
    # print( link.text[0:4])
